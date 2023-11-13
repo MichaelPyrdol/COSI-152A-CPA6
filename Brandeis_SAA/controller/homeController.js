@@ -1,0 +1,15 @@
+exports.showAbout=(req,res)=>{
+    res.render("about");
+};
+exports.showContact=(req,res)=>{
+    res.render("contact");
+};
+exports.showEvent=(req,res)=>{
+    res.render("event");
+};
+exports.showIndex=(req,res)=>{
+    res.render("index");
+};
+exports.showJobs=(req,res)=>{
+    res.render("jobs");
+};

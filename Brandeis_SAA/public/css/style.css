@@ -1,0 +1,128 @@
+:root{
+    --brandeis:#003478;
+}
+body{
+    font-family:"Whitney Light",sans-serif;
+    color:var(--brandeis);
+}
+h1{
+    font-size:45px;
+    padding-top:40px;
+}
+h2{
+    font-size:25px;
+    font-style:italic;
+}
+h3{
+    font-size:20px;
+}
+h4{
+    float:left;
+    display:block;
+    font-size:30px;
+    font-style:italic;
+}
+h5{
+    float:left;
+    display:block;
+    font-size:40px;
+}
+h1,h5{
+    font-family:"Whitney Book",sans-serif;
+}
+p{
+    float:left;
+    display:block;
+    font-size:20px;
+    color:black;
+    width:40%;
+}
+nav{
+    font-family:"Whitney Bold",sans-serif;
+}
+nav{
+    overflow:hidden;
+    background-color:var(--brandeis);
+    padding-left:50px;
+}
+nav a{
+    float:left;
+    display:block;
+    color:var(--brandeis);
+    background-color:white;
+    text-align:center;
+    padding:5px 15px;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:5px;
+    font-weight:bold;
+    text-decoration:none;
+    border-style:dashed;
+}
+/* Changing the background color for hovering over the nav buttons */
+nav a:hover{
+    opacity:0.7;
+}
+section{
+    padding-left:100px;
+}
+/* Setting properties for the footer */
+footer{
+    padding-left:50px;
+    padding:50px;
+    color:white;
+    background-color:grey;
+    font-size:20px;
+    display:flex;
+    align-items:center;
+}
+br{
+    clear:both;
+}
+#brandeisLogoColumn{
+    float:left;
+    width:auto;
+}
+#brandeisLogo{
+    width:200px;
+    padding:20px;
+}
+#footerInfo{
+    float:left;
+    width:80%;
+}
+.social{
+    float:left;
+    color:white;
+    background-color:white;
+}
+.fa{
+    text-align:center;
+    text-decoration:none;
+    padding:10px;
+    width:50px;
+    font-size:30px;
+}
+.fa:hover{
+    opacity:0.7;
+}
+.fa-facebook{
+    color:white;
+    background-color:#4267B2;
+}
+.fa-linkedin{
+    color:white;
+    background-color:#0077B5;
+}
+.fa-reddit{
+    color:white;
+    background-color:#FF5700;
+}
+.fa-youtube{
+    color:white;
+    background-color:#FF0000;
+}
+/* Making the box sizes uniform */
+*{
+    box-sizing:border-box;
+}
