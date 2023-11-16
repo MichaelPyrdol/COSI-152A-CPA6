@@ -1,0 +1,106 @@
+<div class="data-form">
+    <form action="<%=`/jobs/${job._id}/update?_method=PUT`%>"method="POST">
+      <h1>Edit Job</h1>
+      <label for="inputTitle">Title</label>
+      <input
+        type="text"
+        name="title"
+        id="inputTitle"
+        value="<%= job.title %>"
+        autofocus
+        required
+      />
+      <br>
+      <label for="inputCompany">Company</label>
+      <input
+        type="text"
+        name="company"
+        id="inputCompany"
+        value="<%= job.company %>"
+        required
+      />
+      <br>
+      <label for="inputLocation">Location</label>
+      <input
+        type="text"
+        name="location"
+        id="inputLocation"
+        value="<%= job.location %>"
+        required
+      />
+      <br>
+      <label for="inputDescription">Description</label>
+      <input
+        type="text"
+        name="description"
+        id="inputDescription"
+        value="<%= job.description %>"
+        required
+      />
+      <br>
+      <br>
+      <label for="inputRequirements">Requirements</label>
+      <input
+        type="text"
+        name="requirements"
+        id="inputRequirements"
+        value="<%= job.requirements %>"
+        required
+      />
+      <br>
+      <label for="inputSalary">Salary</label>
+      <input
+        type="text"
+        name="salary"
+        id="inputSalary"
+        value="<%= job.salary %>"
+      />
+      <br>
+      <br>
+      <label for="inputContactEmail">Contact Email</label>
+      <input
+        type="text"
+        name="contactEmail"
+        id="inputContactEmail"
+        value="<%= job.contactEmail %>"
+        required
+      />
+      <br>
+      <label for="inputContactPhone">Contact Phone</label>
+      <input
+        type="text"
+        name="contactPhone"
+        id="inputContactPhone"
+        value="<%= job.contactPhone %>"
+        required
+      />
+      <br>
+      <br>
+      <label for="inputPostDate">Post Date</label>
+      <input
+        type="date"
+        name="postDate"
+        id="inputPostDate"
+        value="<%= job.postDate %>"
+      />
+      <br>
+      <label for="inputDeadlineDate">Deadline Date</label>
+      <input
+        type="date"
+        name="deadlineDate"
+        id="inputDeadlineDate"
+        value="<%= job.deadlineDate %>"
+      />
+      <br>
+      <label for="inputIsActive">Is Active</label>
+      <input
+        type="text"
+        name="isActive"
+        id="inputIsActive"
+        value="<%= job.isActive %>"
+      />
+      <br>
+      <br>
+      <button type="submit">Update</button>
+    </form>
+  </div>

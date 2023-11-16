@@ -1,0 +1,81 @@
+<div class="data-form">
+    <form action="/events/create" method="POST">
+      <h1>Create New Event</h1>
+      <label for="inputTitle">Title</label>
+      <input
+        type="text"
+        name="title"
+        id="inputTitle"
+        autofocus
+        required
+      />
+      <br>
+      <label for="inputDescription">Description</label>
+      <input
+        type="text"
+        name="description"
+        id="inputDescription"
+        required
+      />
+      <br>
+      <label for="inputLocation">Location</label>
+      <input
+        type="text"
+        name="location"
+        id="inputLocation"
+        required
+      />
+      <br>
+      <br>
+      <label for="inputStartDate">Start Date</label>
+      <input
+        type="date"
+        name="startDate"
+        id="inputStartDate"
+        required
+      />
+      <br>
+      <label for="inputEndDate">End Date</label>
+      <input
+        type="date"
+        name="endDate"
+        id="inputEndDate"
+        required
+      />
+      <br>
+      <label for="inputIsOnline">Is Online</label>
+      <input
+        type="text"
+        name="isOnline"
+        id="inputIsOnline"
+        required
+      />
+      <br>
+      <label for="inputRegistrationLink">Registration Link</label>
+      <input
+        type="text"
+        name="registrationLink"
+        id="inputRegistrationLink"
+        required
+      />
+      <br>
+      <br>
+      <label for="inputOrganizer">Organizer</label>
+      <input
+        type="text"
+        name="organizer"
+        id="inputOrganizer"
+        required
+      />
+      <br>
+      <label for="inputAttendees">Attendees</label>
+      <input
+        type="text"
+        name="attendees"
+        id="inputAttendees"
+      />
+      <br>
+      <br>
+      <button type="submit">Create new event</button>
+    </form>
+  </div>

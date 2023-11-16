@@ -1,0 +1,89 @@
+<div class="data-form">
+    <form action="<%=`/events/${event._id}/update?_method=PUT`%>"method="POST">
+      <h1>Edit Event</h1>
+      <label for="inputTitle">Title</label>
+      <input
+        type="text"
+        name="title"
+        id="inputTitle"
+        value="<%= event.title %>"
+        autofocus
+        required
+      />
+      <br>
+      <label for="inputDescription">Description</label>
+      <input
+        type="text"
+        name="description"
+        id="inputDescription"
+        value="<%= event.description %>"
+        required
+      />
+      <br>
+      <label for="inputLocation">Location</label>
+      <input
+        type="text"
+        name="location"
+        id="inputLocation"
+        value="<%= event.location %>"
+        required
+      />
+      <br>
+      <br>
+      <label for="inputStartDate">Start Date</label>
+      <input
+        type="date"
+        name="startDate"
+        id="inputStartDate"
+        value="<%= event.startDate %>"
+        required
+      />
+      <br>
+      <label for="inputEndDate">End Date</label>
+      <input
+        type="date"
+        name="endDate"
+        id="inputEndDate"
+        value="<%= event.endDate %>"
+        required
+      />
+      <br>
+      <label for="inputIsOnline">Is Online</label>
+      <input
+        type="text"
+        name="isOnline"
+        id="inputIsOnline"
+        value="<%= event.isOnline %>"
+      />
+      <br>
+      <label for="inputRegistrationLink">Registration Link</label>
+      <input
+        type="text"
+        name="registrationLink"
+        id="inputRegistrationLink"
+        value="<%= event.registrationLink %>"
+        required
+      />
+      <br>
+      <br>
+      <label for="inputOrganizer">Organizer</label>
+      <input
+        type="text"
+        name="organizer"
+        id="inputOrganizer"
+        value="<%= event.organizer %>"
+        required
+      />
+      <br>
+      <label for="inputAttendees">Attendees</label>
+      <input
+        type="text"
+        name="attendees"
+        id="inputAttendees"
+        value="<%= event.attendees %>"
+      />
+      <br>
+      <br>
+      <button type="submit">Update</button>
+    </form>
+  </div>

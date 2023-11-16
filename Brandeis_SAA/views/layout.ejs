@@ -3,7 +3,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/whitney-2">
         <link rel="stylesheet" href="/css/style.css">
-        <title>Michael Pyrdol</title>
+        <title>Brandeis Alumni Association</title>
     </head>
     <body>
         <header>
@@ -15,11 +15,19 @@
             <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/jobs">Jobs</a>
-            <a href="/event">Event</a>
+            <a href="/events">Events</a>
             <a href="/contact">Contact</a>
+            <a href="/users">Users</a>
         </nav>
         <section>
             <article>
+                <div class="flashes">
+                    <% if (flashMessages) { %> <% if (flashMessages.success) { %>
+                    <div class="flash success"><%= flashMessages.success %></div>
+                    <% } else if (flashMessages.error) { %>
+                    <div class="flash error"><%= flashMessages.error %></div>
+                    <% } %> <% } %>
+                </div>
                 <%- body%>
             </article>
         </section>
